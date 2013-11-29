@@ -34,6 +34,12 @@
 Install vagrant 1.3.5 (http://www.vagrantup.com/)
 Install virtualbox 4.3 (https://www.virtualbox.org/)
 
+#### Install vagrant plugins
+
+    vagrant plugin install --plugin-source https://rubygems.org --plugin-prerelease vagrant-vbguest
+    vagrant plugin install vagrant-berkshelf
+    vagrant plugin install vagrant-omnibus
+
 #### Setup base box Box
 
     vagrant up # starts the vm and install all packages
