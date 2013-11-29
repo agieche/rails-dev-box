@@ -4,24 +4,29 @@
 
 **Rails Dev Box** is a ready to use vagrant machine. It ships with the following components:
 
-**OS**: Ubuntu 12.04 LTS
+**OS**:
 
-**Git**
+Ubuntu 12.04 LTS
 
-**Ruby**: 2.0.0-p247
+**Packages**:
 
-**rbenv**
+Git
+Ruby (2.0.0-p247 via rbenv)
+Node.js (for asset-pipeline)
+Java
 
-**Postgres**: 9.1
+Imagemagick
+PhantomJS
 
-**MongoDB**
+**DB**:
 
-**Java**
+Postgres 9.1
+MongoDB
 
-**Imagemagick**
+**Gems**:
 
-**Rails**: 4.0
-
+Bundler
+Rails
 
 ### How to use
 
