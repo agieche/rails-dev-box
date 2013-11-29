@@ -40,11 +40,13 @@ Install virtualbox 4.3 (https://www.virtualbox.org/)
     vagrant plugin install vagrant-berkshelf
     vagrant plugin install vagrant-omnibus
 
-#### Setup base box Box
+#### Setup base box
 
     vagrant up # starts the vm and install all packages
     vagrant package # this creates a package.box file
     vagrant halt
+
+#### Setup project specific vm
 
 Switch to your rails project folder:
 
@@ -56,10 +58,14 @@ Add this to your Vagrantfile inside of the rails project folder:
     config.vm.network :private_network, ip: "10.10.10.10"
     config.vm.synced_folder ".", "/vagrant", :nfs => true
 
+#### Start project specific vm
+
 Save Vagrantfile and enter these commands inside of your rails project folder:
 
     vagrant up
     vagrant ssh
+
+#### Setup rails project inside of the vm
 
 Now, you're on your vagrant machine. Finally do:
 
