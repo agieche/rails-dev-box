@@ -2,31 +2,36 @@
 
 ## Overview
 
-**Rails Dev Box** is a ready to use vagrant machine. It ships with the following components:
+**Rails Dev Box** is a preconfigured vagrant box, that you can use as base box for your different rails development vm needs.
+
+The dependencies are managed via chef-solo and berkshelf.
+
+The configuration of this base box ships with the following components:
 
 **OS**:
 
-Ubuntu 12.04 LTS
+- Ubuntu 12.04 LTS 64-bit
 
 **Packages**:
 
-Git
-Ruby (2.0.0-p247 via rbenv)
-Node.js (for asset-pipeline)
-Java
-
-Imagemagick
-PhantomJS
+- Git
+- Ruby (2.0.0-p247 via rbenv)
+- Node.js (for asset-pipeline)
+- Java
+- Imagemagick
+- PhantomJS
 
 **DB**:
 
-Postgres 9.1
-MongoDB
+- Postgres 9.1
+- MongoDB
 
 **Gems**:
 
-Bundler
-Rails
+- Bundler
+- Rails
+
+Feel free to add or remove chef cookbooks in the vagrantfile and berksfile to fit your apps requirements.
 
 ### How to use
 
@@ -36,8 +41,9 @@ Rails
 
 #### Install dependencies
 
-Install vagrant 1.3.5 (http://www.vagrantup.com/)
-Install virtualbox 4.3 (https://www.virtualbox.org/)
+    Install vagrant 1.3.5 (http://www.vagrantup.com/)
+
+    Install virtualbox 4.3 (https://www.virtualbox.org/)
 
 #### Install vagrant plugins
 
@@ -80,6 +86,4 @@ Now, you're on your vagrant machine. Finally do:
     bundle exec rails server
 
 Now, you're ready to go. Point your browser to http://localhost:3000 and get busy!
-
-
 
