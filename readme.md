@@ -41,9 +41,9 @@ Feel free to add or remove chef cookbooks in the vagrantfile and berksfile to fi
 
 #### Install dependencies
 
-    Install vagrant 1.3.5 (http://www.vagrantup.com/)
+Install vagrant 1.3.5 (http://www.vagrantup.com/)
 
-    Install virtualbox 4.3 (https://www.virtualbox.org/)
+Install virtualbox 4.3 (https://www.virtualbox.org/)
 
 #### Install vagrant plugins
 
