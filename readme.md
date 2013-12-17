@@ -15,7 +15,9 @@ The configuration of this base box ships with the following components:
 **Packages**:
 
 - Git
-- Ruby (2.0.0-p247 via rbenv)
+- Ruby (via rbenv)
+  - 2.0.0-p247
+  - 2.0.0-p353
 - Node.js (for asset-pipeline)
 - Java
 - Imagemagick
